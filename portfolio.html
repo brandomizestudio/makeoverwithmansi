@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Makeover With Mansi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Makeover With Mansi</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="container">
+            <h1>My Work</h1>
+            <p>A showcase of transformations and artistry</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="party">Party</button>
+                <button class="filter-btn" data-filter="editorial">Editorial</button>
+                <button class="filter-btn" data-filter="before-after">Before & After</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Bridal Makeup -->
+                <div class="gallery-item" data-category="bridal">
+                    <img src="Photos/IMG_8275.JPG" alt="Classic Bridal Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Classic Bridal</h4>
+                        <p>Traditional bridal makeup with gold accents</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bridal">
+                    <img src="Photos/IMG_8274.JPG" alt="Modern Bridal Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Modern Bridal</h4>
+                        <p>Contemporary bridal look with subtle glam</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bridal">
+                    <img src="Photos/IMG_8273.JPG" alt="Destination Wedding Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Destination Wedding</h4>
+                        <p>Beach wedding makeup with natural glow</p>
+                    </div>
+                </div>
+
+                <!-- Party Makeup -->
+                <div class="gallery-item" data-category="party">
+                    <img src="Photos/IMG_8272.JPG" alt="Glamorous Evening Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Glamorous Evening</h4>
+                        <p>Bold smokey eyes for cocktail party</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="party">
+                    <img src="Photos/IMG_8262.JPG" alt="Birthday Glam Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Birthday Glam</h4>
+                        <p>Sparkly makeup for special celebration</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="party">
+                    <img src="Photos/IMG_8263.JPG" alt="New Year Party Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>New Year Party</h4>
+                        <p>Metallic eyes with bold lips</p>
+                    </div>
+                </div>
+
+                <!-- Editorial Shoots -->
+                <div class="gallery-item" data-category="editorial">
+                    <img src="Photos/IMG_8264.JPG" alt="Fashion Editorial Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Fashion Editorial</h4>
+                        <p>High fashion makeup for magazine shoot</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="editorial">
+                    <img src="Photos/IMG_8265.JPG" alt="Commercial Shoot Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Commercial Shoot</h4>
+                        <p>Clean beauty look for brand campaign</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="editorial">
+                    <img src="Photos/IMG_8266.JPG" alt="Artistic Portrait Makeup" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <h4>Artistic Portrait</h4>
+                        <p>Creative makeup for artistic photography</p>
+                    </div>
+                </div>
+
+                <!-- Before & After Transformations -->
+                <div class="transformation-item" data-category="before-after">
+                    <div class="transformation-images">
+                        <div class="before-img">
+                            <img src="Photos/0EE1DE94-B886-4439-9B0D-171BCC206246.JPG" alt="Before Makeup">
+                            <span class="label">Before</span>
+                        </div>
+                        <div class="after-img">
+                            <img src="Photos/IMG_9101.JPG" alt="After Bridal Makeup">
+                            <span class="label">After</span>
+                        </div>
+                    </div>
+                    <h4>Bridal Transformation</h4>
+                    <p>"I felt like a princess on my wedding day!" - Priya</p>
+                </div>
+
+                <div class="transformation-item" data-category="before-after">
+                    <div class="transformation-images">
+                        <div class="before-img">
+                            <img src="Photos/83A6B837-72FE-4CF4-8412-A8BC2CA77ADC.JPG" alt="Before Party Makeup">
+                            <span class="label">Before</span>
+                        </div>
+                        <div class="after-img">
+                            <img src="Photos/IMG_9098.JPG" alt="After Party Makeup">
+                            <span class="label">After</span>
+                        </div>
+                    </div>
+                    <h4>Party Glam</h4>
+                    <p>"Absolutely stunning for my anniversary!" - Kavya</p>
+                </div>
+
+                <div class="transformation-item" data-category="before-after">
+                    <div class="transformation-images">
+                        <div class="before-img">
+                            <img src="Photos/IMG_8630.JPG" alt="Before Makeup">
+                            <span class="label">Before</span>
+                        </div>
+                        <div class="after-img">
+                            <img src="Photos/IMG_8629.JPG" alt="After Makeup">
+                            <span class="label">After</span>
+                        </div>
+                    </div>
+                    <h4>Natural Glow</h4>
+                    <p>"Perfect for my engagement photos!" - Anisha</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"Mansi made me feel like a princess on my wedding day. Her attention to detail is incredible!"</p>
+                    <h4>- Priya S.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"Professional, talented, and so easy to work with. My makeup looked flawless in all the photos."</p>
+                    <h4>- Anita R.</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"I've never felt more confident. Mansi truly understands how to enhance natural beauty."</p>
+                    <h4>- Kavya M.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Makeover With Mansi. All rights reserved.</p>
+                <p class="powered-by">Powered and secured by <a href="#" class="brand-link">@brandomize.studio</a></p>
+            </div>
+            <div class="footer-right">
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch-checkbox">
+                    <label for="theme-switch" class="theme-switch-label">
+                        <span class="theme-switch-slider"></span>
+                        <span class="theme-switch-text">🌙</span>
+                    </label>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/makeoverswithmansi_mwm?igsh=MTBwZWtmbGpsNzl3bw==" target="_blank">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="tel:+917404024650" class="floating-btn call-btn" title="Call Now">
+            <div class="btn-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+            </div>
+            <span class="btn-text">Call</span>
+        </a>
+        <a href="https://wa.me/917404024650?text=Hi%20Mansi,%20I%20would%20like%20to%20book%20a%20makeup%20session" target="_blank" class="floating-btn whatsapp-btn" title="WhatsApp">
+            <div class="btn-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+            </div>
+            <span class="btn-text">WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeSwitch = document.getElementById('theme-switch');
+            const body = document.body;
+            
+            // Check for saved theme preference or default to light mode
+            const currentTheme = localStorage.getItem('theme') || 'light';
+            
+            if (currentTheme === 'dark') {
+                body.classList.add('dark-mode');
+                themeSwitch.checked = true;
+            }
+            
+            themeSwitch.addEventListener('change', function() {
+                if (this.checked) {
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    body.classList.remove('dark-mode');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+        });
+    </script>
+
+    <!-- JavaScript for filtering -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
