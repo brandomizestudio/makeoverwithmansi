@@ -142,7 +142,7 @@ body.dark-mode {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    padding: 100px 20px 50px;
+    padding: 120px 20px 50px;
     max-width: 1200px;
     margin: 0 auto;
     gap: 4rem;
@@ -201,6 +201,7 @@ body.dark-mode {
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    margin-top: 2rem;
     animation: slideInLeft 0.8s ease-out;
 }
 
@@ -491,14 +492,29 @@ body.dark-mode {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    object-position: center top; /* Focus on face area */
+    object-position: center 30%;
     border-radius: 15px;
+    background: var(--bg-secondary);
 }
 
 /* Universal Image Sizing Rules */
 img {
     max-width: 100%;
     height: auto;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    transition: opacity 0.3s ease;
+}
+
+/* Image loading states */
+img:not([src]),
+img[src=""],
+img[src="#"] {
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+    opacity: 0.1;
+}
+
+img:hover {
+    opacity: 0.95;
 }
 
 /* All container images use object-fit: cover for consistent sizing */
@@ -1252,8 +1268,38 @@ img {
 .services h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     color: var(--text-primary);
+}
+
+.service-category {
+    margin-bottom: 4rem;
+}
+
+.service-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
+    border-radius: 2px;
 }
 
 .services-grid {
@@ -1697,7 +1743,7 @@ body.dark-mode .label {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 100px 20px 50px;
+        padding: 120px 20px 50px;
         gap: 2rem;
     }
     
