@@ -110,6 +110,43 @@ body.dark-mode {
     height: 55px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo-img {
+    height: 55px;
+    width: auto;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.logo-link:hover .logo-img {
+    transform: scale(1.05);
+}
+
+.logo-link:hover .logo-text {
+    color: var(--accent-hover);
+}
+
 .logo h2 {
     color: var(--accent-color);
     font-weight: 600;
@@ -1145,6 +1182,18 @@ img {
         display: flex;
     }
     
+    .logo-img {
+        height: 45px;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .logo-link {
+        gap: 12px;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1215,6 +1264,18 @@ img {
 }
 
 @media (max-width: 480px) {
+    .logo-img {
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .logo-link {
+        gap: 10px;
+    }
+    
     .video-card-horizontal {
         width: 220px;
     }
