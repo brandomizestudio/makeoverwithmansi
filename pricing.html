@@ -15,7 +15,9 @@
     <link rel="shortcut icon" href="public/logo.png">
 
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="waxing-styles.css">
+    <link rel="stylesheet" href="makeup-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         /* Keep pricing page content clear of the fixed navbar */
         .pricing-main {
@@ -68,18 +70,50 @@
                         <h3 class="pricing-category-title">Makeup Services</h3>
                         <p class="category-description">Professional bridal & event makeup</p>
                         <div class="pricing-details">
-                        <ul class="pricing-list">
-                            <li><span class="service-name">Bridal Makeup</span><span
-                                    class="service-price">₹20,000</span></li>
-                            <li><span class="service-name">Sangeet/Engagement Makeup</span><span
-                                    class="service-price">₹14,000</span></li>
-                            <li><span class="service-name">Roka Makeup</span><span class="service-price">₹12,000</span>
-                            </li>
-                            <li><span class="service-name">Haldi/Mehendi Makeup</span><span
-                                    class="service-price">₹8,000</span></li>
-                            <li><span class="service-name">Party Makeup</span><span class="service-price">₹6,000</span>
-                            </li>
-                        </ul>
+                            <ul class="pricing-list">
+                                <li>
+                                    <span class="service-name">Bridal Makeup</span>
+                                    <span class="service-price">₹20,000 <small>(On venue within 100km: ₹30,000)</small></span>
+                                </li>
+                                <li>
+                                    <span class="service-name">Engagement/Reception Makeup</span>
+                                    <span class="service-price">₹15,000 <small>(On venue within 100km: ₹20,000)</small></span>
+                                </li>
+                                <li>
+                                    <span class="service-name">Sangeet / Cocktail Glam</span>
+                                    <span class="service-price">₹14,000 <small>(On venue within 100km: ₹17,500)</small></span>
+                                </li>
+                                <li>
+                                    <span class="service-name">Haldi / Mehendi Soft Glam</span>
+                                    <span class="service-price">₹8,000 <small>(On venue within 100km: ₹11,000)</small></span>
+                                </li>
+                                <li>
+                                    <span class="service-name">Host Makeup</span>
+                                    <span class="service-price">₹6,000 <small>(On venue within 100km: ₹8,000)</small></span>
+                                </li>
+                                <li>
+                                    <span class="service-name">Party Makeup</span>
+                                    <span class="service-price">₹4,000 <small>(On venue within 100km: ₹5,000)</small></span>
+                                </li>
+                            </ul>
+
+                            <div class="makeup-includes">
+                                <h4>Includes:</h4>
+                                <p>HD Makeup, hairstyling, custom lashes, lenses, draping & jewellery setting</p>
+                            </div>
+
+                            <div class="makeup-brands">
+                                <h4>Products Used:</h4>
+                                <p>Charlotte Tilbury, NARS, Huda Beauty, Makeup Forever, MAC, Tarte, Laura Mercier, Dior & more ✨</p>
+                            </div>
+
+                            <div class="makeup-policy">
+                                <h4>Important Notes:</h4>
+                                <ul>
+                                    <li><strong>Travel charges:</strong> Apply as per location (Outstation travel + stay to be arranged by client).</li>
+                                    <li><strong>Booking Policy:</strong> Bookings are confirmed upon advance payment 🤍</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -327,36 +361,15 @@
                         <h3 class="pricing-category-title">Nail Services</h3>
                         <p class="category-description">Manicure & pedicure treatments</p>
                         <div class="pricing-details">
-                        <div class="pricing-subcategory">
-                            <h4 class="pricing-subheading">Manicure</h4>
-                            <ul class="pricing-list">
-                                <li><span class="service-name">Regular</span><span class="service-price">₹300</span>
-                                </li>
-                                <li><span class="service-name">Spa Manicure</span><span
-                                        class="service-price">₹400</span></li>
-                                <li><span class="service-name">French</span><span class="service-price">₹500</span></li>
-                                <li><span class="service-name">Crystal</span><span class="service-price">₹600</span>
-                                </li>
-                                <li><span class="service-name">O3+</span><span class="service-price">₹500</span></li>
-                                <li><span class="service-name">Bubble Gum</span><span class="service-price">₹800</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="pricing-subcategory">
-                            <h4 class="pricing-subheading">Pedicure</h4>
-                            <ul class="pricing-list">
-                                <li><span class="service-name">Regular</span><span class="service-price">₹300</span>
-                                </li>
-                                <li><span class="service-name">Spa Pedicure</span><span
-                                        class="service-price">₹400</span></li>
-                                <li><span class="service-name">French</span><span class="service-price">₹500</span></li>
-                                <li><span class="service-name">Crystal</span><span class="service-price">₹600</span>
-                                </li>
-                                <li><span class="service-name">O3+</span><span class="service-price">₹500</span></li>
-                                <li><span class="service-name">Bubble Gum</span><span class="service-price">₹800</span>
-                                </li>
-                            </ul>
-                        </div>
+                            <div class="pricing-subcategory">
+                                <h4 class="pricing-subheading">Manicure / Pedicure</h4>
+                                <ul class="pricing-list">
+                                    <li><span class="service-name">Lotus Regular</span><span class="service-price">₹500 Each</span></li>
+                                    <li><span class="service-name">O3 Basic</span><span class="service-price">₹600 Each</span></li>
+                                    <li><span class="service-name">Lotus Advance</span><span class="service-price">₹700 Each</span></li>
+                                    <li><span class="service-name">O3 Advance</span><span class="service-price">₹800 Each</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -367,24 +380,62 @@
                         <h3 class="pricing-category-title">Waxing Services</h3>
                         <p class="category-description">Body & facial waxing</p>
                         <div class="pricing-details">
-                        <ul class="pricing-list">
-                            <li><span class="service-name">Under Arms</span><span class="service-price">₹50 / ₹70 /
-                                    ₹100</span></li>
-                            <li><span class="service-name">Full Arms</span><span class="service-price">₹150 / ₹200 /
-                                    ₹300</span></li>
-                            <li><span class="service-name">Half Legs</span><span class="service-price">₹150 / ₹200 /
-                                    ₹300</span></li>
-                            <li><span class="service-name">Full Legs</span><span class="service-price">₹300 / ₹400 /
-                                    ₹600</span></li>
-                            <li><span class="service-name">Stomach</span><span class="service-price">₹150 / ₹200 /
-                                    ₹300</span></li>
-                            <li><span class="service-name">Back</span><span class="service-price">₹250 / ₹300 /
-                                    ₹500</span></li>
-                            <li><span class="service-name">Full Body</span><span class="service-price">₹800 / ₹1000 /
-                                    ₹1500</span></li>
-                            <li><span class="service-name">Face Wax</span><span class="service-price">₹200 / ₹300</span>
-                            </li>
-                        </ul>
+                            <ul class="pricing-list" style="margin-bottom: 20px;">
+                                <li>
+                                    <span class="service-name">Face Wax (Brazilian Wax)</span>
+                                    <span class="service-price">₹200 / ₹300</span>
+                                </li>
+                            </ul>
+                            <div class="waxing-table">
+                                <div class="waxing-header">
+                                    <div class="col-service">Service</div>
+                                    <div class="col-price">Aloevera</div>
+                                    <div class="col-price">Chocolate</div>
+                                    <div class="col-price">Rica</div>
+                                </div>
+                                <div class="waxing-row">
+                                    <div class="col-service">Under Arms</div>
+                                    <div class="col-price">₹50</div>
+                                    <div class="col-price">₹70</div>
+                                    <div class="col-price">₹100</div>
+                                </div>
+                                <div class="waxing-row">
+                                    <div class="col-service">Full Arms</div>
+                                    <div class="col-price">₹150</div>
+                                    <div class="col-price">₹200</div>
+                                    <div class="col-price">₹300</div>
+                                </div>
+                                <div class="waxing-row">
+                                    <div class="col-service">Half Legs</div>
+                                    <div class="col-price">₹150</div>
+                                    <div class="col-price">₹200</div>
+                                    <div class="col-price">₹300</div>
+                                </div>
+                                <div class="waxing-row">
+                                    <div class="col-service">Full Legs</div>
+                                    <div class="col-price">₹300</div>
+                                    <div class="col-price">₹400</div>
+                                    <div class="col-price">₹600</div>
+                                </div>
+                                <div class="waxing-row">
+                                    <div class="col-service">Stomach</div>
+                                    <div class="col-price">₹150</div>
+                                    <div class="col-price">₹200</div>
+                                    <div class="col-price">₹300</div>
+                                </div>
+                                <div class="waxing-row">
+                                    <div class="col-service">Back</div>
+                                    <div class="col-price">₹250</div>
+                                    <div class="col-price">₹300</div>
+                                    <div class="col-price">₹500</div>
+                                </div>
+                                <div class="waxing-row">
+                                    <div class="col-service">Full Body</div>
+                                    <div class="col-price">₹800</div>
+                                    <div class="col-price">₹1000</div>
+                                    <div class="col-price">₹1500</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

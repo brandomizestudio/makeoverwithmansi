@@ -1,0 +1,73 @@
+/* Makeup Services Specific Styles */
+
+.service-price small {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.makeup-includes,
+.makeup-brands,
+.makeup-policy {
+    margin-top: 1.5rem;
+    padding: 1.2rem;
+    background: rgba(212, 165, 116, 0.05);
+    border-radius: 12px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.makeup-includes h4,
+.makeup-brands h4,
+.makeup-policy h4 {
+    font-size: 1rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.makeup-includes p,
+.makeup-brands p,
+.makeup-policy p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.makeup-policy ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.makeup-policy li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.makeup-policy li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.makeup-policy li:last-child {
+    margin-bottom: 0;
+}
+
+/* Ensure list items align nicely with multi-line prices */
+.pricing-list li {
+    align-items: flex-start;
+}
+
+.service-price {
+    text-align: right;
+}

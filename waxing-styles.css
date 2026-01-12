@@ -1,0 +1,76 @@
+/* Waxing Table Styles */
+.waxing-table {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.waxing-header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    font-weight: 600;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    font-size: 0.95rem;
+}
+
+.waxing-header .col-service {
+    text-align: left;
+    padding-left: 5px;
+}
+
+.waxing-header .col-price {
+    text-align: center;
+}
+
+.waxing-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.15);
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.waxing-row:last-child {
+    border-bottom: none;
+}
+
+.waxing-row:hover {
+    background-color: rgba(212, 165, 116, 0.05);
+}
+
+.waxing-row .col-service {
+    font-weight: 500;
+    color: var(--text-primary);
+    padding-left: 5px;
+}
+
+.waxing-row .col-price {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .waxing-header, .waxing-row {
+        grid-template-columns: 1.2fr 1fr 1fr 1fr;
+        font-size: 0.85rem;
+        gap: 2px;
+    }
+    
+    .waxing-header {
+        font-size: 0.8rem;
+    }
+    
+    .waxing-row .col-service {
+        font-size: 0.85rem;
+        line-height: 1.2;
+    }
+    
+    .waxing-row .col-price {
+        font-size: 0.8rem;
+    }
+}
